@@ -1,53 +1,43 @@
-SurfaceSense: Pothole Detection System
+# SurfaceSense: Pothole Detection System
 A computer vision project that detects potholes in road images and videos using YOLOv8.
 
-Problem Statement
+## Problem Statement
 Potholes are a major cause of road accidents and vehicle damage. Manual inspection of roads is slow and costly. This project automates pothole detection using deep learning.
 
-Features
-Detects potholes in images with bounding boxes
+## Features
+- Detects potholes in images with bounding boxes
+- Works on video files frame by frame
+- Simple web interface built with Streamlit
 
-Works on video files frame by frame
+## Tech Stack
+- Python
+- YOLOv8 (Ultralytics)
+- OpenCV
+- Streamlit
 
-Simple web interface built with Streamlit
+## Setup Instructions
 
-Tech Stack
-Python
+1. Clone the repository
+   git clone https://github.com/SOUL665/Pothole-Detector-Project.git
 
-YOLOv8 (Ultralytics)
+2. Create a virtual environment
+   python -m venv venv
+   venv\Scripts\activate
 
-OpenCV
+3. Install dependencies
+   pip install -r requirements.txt
 
-Streamlit
+4. Run the app
+   streamlit run src/app.py
 
-Setup Instructions
-Clone the repository
-git clone https://github.com/SOUL665/Pothole-Detector-Project.git
+## Project Structure
+- data/ - Dataset with train and validation images
+- src/train.py - Model training script
+- src/detect.py - Detection script for images and videos
+- src/app.py - Streamlit web application
+- runs/ - Training results and model weights
 
-Create a virtual environment
-python -m venv venv
-venv\Scripts\activate
-
-Install dependencies
-pip install -r requirements.txt
-
-Run the app
-streamlit run src/app.py
-
-Project Structure
-data/ - Dataset with train and validation images
-
-src/train.py - Model training script
-
-src/detect.py - Detection script for images and videos
-
-src/app.py - Streamlit web application
-
-runs/ - Training results and model weights
-
-Results
-mAP50: 0.715
-
-Precision: 0.74
-
-Recall: 0.646
+## Results
+- mAP50: 0.715
+- Precision: 0.74
+- Recall: 0.646
