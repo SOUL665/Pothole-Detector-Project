@@ -1,42 +1,39 @@
-# SurfaceSense: Pothole Detection System
-
+SurfaceSense: Pothole Detection System
 A computer vision project that detects potholes in road images and videos using YOLOv8.
 
-## Problem Statement
-
+Problem Statement
 Potholes are a major cause of road accidents and vehicle damage. Manual inspection of roads is slow and costly. This project automates pothole detection using deep learning.
 
-## Features
+Features
+Detects potholes in images with bounding boxes
 
-- Detects potholes in images with bounding boxes
-- Works on video files frame by frame
-- Simple web interface built with Streamlit
+Works on video files frame by frame
 
-## Tech Stack
+Simple web interface built with Streamlit
 
-- Python
-- YOLOv8 (Ultralytics)
-- OpenCV
-- Streamlit
+Tech Stack
+Python
 
-## Setup Instructions
+YOLOv8 (Ultralytics)
 
-1. Clone the repository
-```bash
-git clone [https://github.com/SOUL665/Pothole-Detector-Project.git](https://github.com/SOUL665/Pothole-Detector-Project.git)
+OpenCV
+
+Streamlit
+
+Setup Instructions
+Clone the repository
+git clone https://github.com/SOUL665/Pothole-Detector-Project.git
+
 Create a virtual environment
-
-Bash
 python -m venv venv
 venv\Scripts\activate
+
 Install dependencies
-
-Bash
 pip install -r requirements.txt
-Run the app
 
-Bash
+Run the app
 streamlit run src/app.py
+
 Project Structure
 data/ - Dataset with train and validation images
 
